@@ -1,0 +1,21 @@
+ <h2> Date and Time </h2>
+<pre><h3>Local Time</h3> 
+       Day : {{days}}
+       Date : {{date | date : 'yyy-mm-dd'}}
+       Time : {{date | date : 'hh : mm : ss a'}}  </pre>
+  <!-- The Current Date and Time is <input value  = {{date}}> -->
+ <!--  <h2> The Local Date and Time is {{LocalDate}} </h2> -->
+ <pre><h3>Different Time Zone</h3>
+   Arabia Standard Time : {{ date | date: 'medium':'UTC +3' }}
+   Central Standard Time : {{date | date:'medium':'UTC -6'}}
+   China Standard Time : {{date | date:'medium':'UTC +8'}}
+   Delta Time Zone : {{date | date:'medium':'UTC +4'}}
+</pre>
+<pre> 
+<ul type  = "disc">
+<b>Different State Times in their own language</b> </ul>
+<li> Date time in Greek {{date | date:'medium': 'GMT +3':'el'}} </li>
+<li>Date time in Spanish {{date | date:'medium':'GMT +2':'es'}} </li>
+<li>Date time in Portuguese {{date | date:'medium':'GMT +1':'pt'}}</li>
+<li>Date time in Tamil {{date | date:'full':'+0530':'ta'}} </li>
+<li> Date time in Hindi {{date | date: 'medium' : '+0530' : 'hi'}} </li></pre>

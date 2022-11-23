@@ -1,0 +1,33 @@
+<p id = "demo">Creating a Survey form</p>
+<div class = "gunacontainer">
+    <fieldset align = "center"> 
+    <legend align = "center"> Google form </legend>
+   <form> 
+    <img src ="assets/bd.png" height ="100px" width = "100px" align = "left"  alt = "Blood Donation"> 
+
+    <label> Name </label> <input type = "text" required />
+    <br> 
+    <label> Age </label> <input type = "number" required />
+    <br>
+    <label> Blood Group </label> 
+    <select> 
+        <option> Choose</option>
+        <option> A +ve </option>
+        <option> B +ve </option>
+        <option> AB +ve </option>
+        <option> O +ve </option>
+        <option> A -ve </option>
+        <option> B -ve </option>
+        <option> AB -ve </option>
+        <option> O -ve </option>
+    </select>
+    <br>
+   <pre><label>Gender</label> <input type = "radio" name = "guna">Male     <input type ="radio" name = "guna">Female </pre>
+    <input type = "checkbox" required> I agree to share my personal information
+    <br> 
+    <br>
+
+    <button onclick="document.getElementById('demo').innerHTML = 'Your response is been recorded'">Submit</button>
+
+     </form> </fieldset>
+</div>
